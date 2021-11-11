@@ -1,3 +1,18 @@
+// Function 3
+// Let's define a function that is checking every element of an array and return the element that starts with "ph".
+function starts_with_ph(arry){
+    var i = 0; 
+    while(i < arry.length) {
+
+        if(arry[i].startsWith("ph")) {
+            return arry[i];
+        }
+        i++;
+    }
+   }
+
+
+
 // Function 1
 // We set the function with 2 integers to call it later in the code
 function calculation(num1, num2) {
@@ -23,33 +38,11 @@ function number_of_letters(s) {
 
 }
 // Here we call a function with using a different string length
-number_of_letters("dgdgr");
+number_of_letters("dgdgrggfgffgffdfd");
 
 // Function 3
 
-function starts_with_ph(array) {
-    for(i=0; i < array.length; i++) {
-        var that_word = array[0];
-        if(that_word.startsWith("ph")) {
-            that_word = array[i];
-        }
-    }
-    return that_word;
-   }
-
-   var words = starts_with_ph(["lamp", "rain", "photo"]);
-
-   
-function starts_with_ph(array){
-   var i = 0; 
-   var that_word = array[0];
-   while(i < array.length) {
-  
-       if(that_word.startsWith("ph")) {
-           that_word = array[i];
-       }
-       i++;
-   }
-   return that_word;
-  }
-  
+// This is array for function 3
+var words = ["lamp", "rain", "photo"];
+// Here we call the function 3
+starts_with_ph(words);
